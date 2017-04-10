@@ -285,6 +285,10 @@ $(document).ready(function () {
         NexT.utils.displaySidebar();
       }
       integrator.next();
+    },
+
+    particles: function (integrator) {
+      integrator.next();
     }
   };
 

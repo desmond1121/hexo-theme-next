@@ -6,21 +6,23 @@
 {% endif %}
 
 <html class="{{ html_class | lower }}">
+
 <head>
   {% include '_partials/head.swig' %}
+  {% include '_scripts/third-party/analytics.swig' %}
   <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
 
-  {% include '_scripts/third-party/analytics.swig' %}
-
   {% set container_class = "container one-collumn " %}
   {% if theme.sidebar.position %}
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
   {% endif %}
-
+  
   <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
+    {% include '_partials/particle.swig' %}
+  
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -53,6 +55,7 @@
     <div class="back-to-top">
       <i class="fa fa-arrow-up"></i>
     </div>
+
   </div>
 
   {% include '_scripts/vendors.swig' %}

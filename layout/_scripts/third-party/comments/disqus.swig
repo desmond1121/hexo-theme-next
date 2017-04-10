@@ -16,7 +16,7 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       }
 
-      run_disqus_script('count.js');
+      run_disqus_script('count.js'); 
       {% if page.comments %}
         run_disqus_script('embed.js');
       {% endif %}
