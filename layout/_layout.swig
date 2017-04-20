@@ -35,7 +35,6 @@
           <div id="content" class="content">
             {% block content %}{% endblock %}
           </div>
-          {% include '_partials/duoshuo-hot-articles.swig' %}
           {% include '_partials/comments.swig' %}
         </div>
         {% if theme.sidebar.display !== 'remove' %}
@@ -73,7 +72,6 @@
   {% include '_scripts/third-party/localsearch.swig' %}
   {% include '_scripts/third-party/mathjax.swig' %}
   {% include '_scripts/third-party/lean-analytics.swig' %}
-  {% include '_scripts/baidu-push.swig' %}
 
 </body>
 </html>

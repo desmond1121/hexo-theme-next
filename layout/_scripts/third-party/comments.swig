@@ -1,2 +1,2 @@
-{% include './comments/duoshuo.swig' %}
-{% include './comments/disqus.swig' %}
+{# {% include './comments/duoshuo.swig' %} #}
+{% include './comments/changyan.swig' %}
